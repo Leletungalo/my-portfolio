@@ -11,7 +11,6 @@ h3 {
 }
 
 html {
-	font-size: 15px;
 	scroll-behavior: smooth;
 }
 
@@ -21,14 +20,15 @@ body {
 
 aside {
 	position: fixed;
-	width: 25%;
+	width: 30%;
 	height: 100vh;
 }
 
 aside .profilePicture {
 	display: block;
-	margin: 1.5em auto;
-	width: 80%;
+	margin: 0 auto;
+	width: 65%;
+	padding: 1em;
 }
 
 aside .socialMedia {
@@ -55,7 +55,7 @@ aside .sections a {
 
 main {
 	display: block;
-	margin-left: 25%;
+	margin-left: 30%;
 }
 
 #home {
@@ -72,7 +72,6 @@ main {
 	display: block;
 	margin: 0 auto;
 	padding: 1.3em 0;
-	font-family: cursive;
 	font-weight: 800;
 }
 
