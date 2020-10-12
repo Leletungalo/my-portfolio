@@ -8,60 +8,44 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      href="css/materialize.min.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
     <link rel="stylesheet" href="./css/stayle.css" />
     <title>My Portfolio</title>
   </head>
   <body>
-    <aside class="grey darken-3">
+    <aside>
       <img
         src="./images/profile.jpeg"
         alt=""
-        class="profilePicture circle center-align responsive-img"
+        class="profile-picture"
       />
-      <h4 class="center-align white-text">Leletu Ngalo</h4>
+      <h2 class="aside-heading" >Leletu Ngalo</h2>
       <div class="socialMedia">
-        <a href="./images/mycv.pdf" target="_blank" class="socialMediaLinks"
-          ><img src="./images/resume.png" class="imageIcon hoverable" alt=""
-        /></a>
+        <a 
+        href="./images/CV.pdf" 
+        target="_blank" 
+        class="socialMediaLinks"
+          >
+          <img src="./images/resume.png" class="imageIcon"  alt="resume">
+        </a>
         <a
           href="https://github.com/Leletungalo"
           target="_blank"
-          class="socialMediaLinks"
-          ><img src="./images/git-hub.png" class="imageIcon hoverable" alt=""
-        /></a>
+          class="socialMediaLinks">
+          <img src="./images/git-hub.png" class="imageIcon" alt="github"/>
+        </a>
         <a
           href="https://www.linkedin.com/in/leletu-ngalo/"
           target="_blank"
-          class="socialMediaLinks"
-          ><img src="./images/linkedin.png" class="imageIcon hoverable" alt=""
-        /></a>
+          class="socialMediaLinks">
+          <img src="./images/linkedin.png" class="imageIcon hoverable" alt="linkedin"/>
+        </a>
       </div>
-      <div class="sections">
-        <a href="#" class="waves-effect waves-light grey darken-3 btn hoverable"
-          >Home</a
-        >
-        <a
-          href="#skills"
-          class="waves-effect waves-light grey darken-3 btn hoverable"
-          >Skills</a
-        >
-        <a
-          href="#projects"
-          class="waves-effect waves-light grey darken-3 btn hoverable"
-          >Projects</a
-        >
-        <a
-          href="#contact"
-          class="waves-effect waves-light grey darken-3 btn hoverable"
-          >Contact</a
-        >
-      </div>
+      <ul class="sections">
+        <li class="sections-liks"><a  href="#">Home</a></li>
+        <li class="sections-liks"><a  href="#skills">Skills</a></li>
+        <li class="sections-liks"><a  href="#projects">Projects</a></li>
+        <li class="sections-liks"><a  href="#contact">Contact</a></li>
+      </ul>
     </aside>
     <main>
       <div id="home" class="white-text">
@@ -74,7 +58,7 @@
           love challenging myself and learning new technology that is why i am
           currently learning back end languages.
         </p>
-        <a href="#contact" class="waves-effect hoverable">Contact</a>
+        <a href="#skills" class="waves-effect hoverable">Contact</a>
       </div>
       <div id="skills">
         <h2 class="subHeading">My Skills</h2>
@@ -82,20 +66,20 @@
           <div class="left">
             <h3>What i do best</h3>
             <ul>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Node.js</li>
+              <li class="skills-liks">JavaScript</li>
+              <li class="skills-liks">React.js</li>
+              <li class="skills-liks">HTML</li>
+              <li class="skills-liks">CSS</li>
+              <li class="skills-liks">Node.js</li>
             </ul>
           </div>
           <div class="right">
             <h3>In developement</h3>
             <ul>
-              <li>Node.js</li>
-              <li>MangoDB</li>
-              <li>Express</li>
-              <li>TypeScript</li>
+              <li class="skills-liks">Node.js</li>
+              <li class="skills-liks">MangoDB</li>
+              <li class="skills-liks">Express</li>
+              <li class="skills-liks">TypeScript</li>
             </ul>
           </div>
         </div>
@@ -139,7 +123,7 @@
       </div>
       <div id="contact">
         <h2 class="subHeading">Contact Me</h2>
-        <form action="contact" method="POST">
+        <form name="Portfolio" method="POST" data-netlify="true>
           <input
             type="text"
             placeholder="Name"
@@ -163,7 +147,7 @@
             name="message"
             id="massage"
             cols="30"
-            rows="50"
+            rows="5"
           ></textarea>
           <div>
             <input type="submit" value="Submit" class="waves-effect btn" />
@@ -171,10 +155,5 @@
         </form>
       </div>
     </main>
-    <!--
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    -->
   </body>
 </html>

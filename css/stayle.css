@@ -1,3 +1,8 @@
+:root {
+	--primary: #f6cc07;
+	--backgrandColor: #050505;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -11,7 +16,6 @@ h3 {
 }
 
 html {
-	font-size: 15px;
 	scroll-behavior: smooth;
 }
 
@@ -19,49 +23,89 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: var(--primary);
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	text-decoration: none;
+}
 aside {
 	position: fixed;
-	width: 25%;
+	width: 30%;
 	height: 100vh;
+	background-color: var(--backgrandColor);
 }
 
-aside .profilePicture {
+.profile-picture {
 	display: block;
-	margin: 1.5em auto;
-	width: 80%;
+	margin: 0 auto;
+	width: 75%;
+	padding: 1em;
+	border-radius: 50%;
 }
-
-aside .socialMedia {
-	width: 100%;
+.aside-heading {
+	color: white;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+.socialMedia {
 	text-align: center;
 }
 
-aside .imageIcon {
-	width: 15%;
-	margin: 0 0.2em;
+.imageIcon {
+	width: 10%;
+	margin: 1em;
 }
 
-aside .sections {
+.sections {
 	margin: 0 auto;
 	width: 80%;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.sections-liks {
+	display: block;
+	background-color: rgb(97, 96, 96);
+	width: 100%;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 4px;
+	box-shadow: 2px 0 10px #3d3939;
+	transition: all 1s;
 }
 
-aside .sections a {
-	display: inline-block;
-	margin: 0.5em 1em;
+.sections-liks a {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.sections-liks:hover {
+	transform: translateY(-10px);
 }
 
 main {
 	display: block;
-	margin-left: 25%;
+	margin-left: 30%;
 }
 
 #home {
 	position: relative;
 	height: 100vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 		url("../images/landing-page.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -69,35 +113,36 @@ main {
 }
 
 #home .mainHeading {
-	display: block;
-	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-size: 3rem;
 	padding: 1.3em 0;
-	font-family: cursive;
 	font-weight: 800;
 }
 
 #home p {
 	display: inline-block;
 	font-size: 1.5rem;
+	color: white;
 }
 
 #home a {
 	position: absolute;
 	top: 70%;
 	left: 50%;
-	transform: translate(-50%, 50%);
+	transform: translate(-50%, -60%);
 	display: inline-block;
 	font-size: 2rem;
 	padding: 0.5em 1em;
 	margin: 0 auto;
 	color: white;
-	background-color: blue;
+	background-color: var(--primary);
 	border-radius: 5%;
 }
 
 /*Skills*/
 #skills {
-	background-color: #808080;
+	background-color: var(--primary);
 	color: whitesmoke;
 }
 
@@ -106,7 +151,7 @@ main {
 	color: white;
 	margin: 0;
 	padding: 0.5em;
-	font-family: cursive;
+	font-size: 2.5rem;
 }
 
 #mySkills {
@@ -121,9 +166,18 @@ main {
 	text-align: center;
 	padding: 0 2em;
 }
-
-#mySkills li {
-	font-size: 2rem;
+#mySkills h3 {
+	font-size: 1.8rem;
+}
+.skills-liks {
+	display: block;
+	background-color: rgb(97, 96, 96);
+	width: 100%;
+	padding: 0.2em;
+	font-size: 1.5rem;
+	margin: 0.5em;
+	border-radius: 4px;
+	box-shadow: 2px 0 10px #3d3939;
 }
 
 /*Project*/
