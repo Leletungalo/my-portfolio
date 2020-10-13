@@ -151,7 +151,7 @@ main {
 	color: white;
 	margin: 0;
 	padding: 0.5em;
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 #mySkills {
@@ -191,50 +191,15 @@ main {
 	justify-content: space-around;
 }
 
-.con {
-	width: 28%;
-	height: 45vh;
-	overflow: hidden;
-	box-shadow: 0 3px 5px black;
-	background-color: white;
-	transition-property: height;
-	transition-duration: 1s;
-	transition-timing-function: linear;
-}
-/*
-
-.con:hover{
-    height: 55vh;
-}*/
-
-.con .projectImage {
-	width: 100%;
+.projects {
+	width: 30%;
+	opacity: 0.8;
+	box-shadow: 5px 0 10px #3d3939;
+	transition: all 0.5s;
 }
 
-.con .projectInfo {
-	display: flex;
-	justify-content: space-between;
-	padding: 0.5em 0.3em;
-}
-
-.projectInfo {
-	padding: 0.3em 0.5em;
-}
-
-.projectHeading {
-	font-weight: 800;
-	font-size: 1.5rem;
-	margin: 0;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-.projectIcon {
-	width: 20%;
-}
-
-.con p {
-	display: none;
+.projects:hover {
+	opacity: 1;
 }
 
 /*form */
@@ -261,6 +226,11 @@ main {
 	color: white;
 }
 
+#contact input[type="submit"] {
+	font-size: 1.4rem;
+	padding: 0.5em;
+	background-color: var(--primary);
+}
 #name {
 	grid-area: name;
 }
