@@ -146,6 +146,7 @@ main {
 #skills {
 	background-color: var(--primary);
 	color: whitesmoke;
+	padding: 1em;
 }
 
 .subHeading {
@@ -159,18 +160,20 @@ main {
 #mySkills {
 	width: 100%;
 	display: flex;
-	margin: 0;
-	padding: 1em 0;
+	justify-content: space-around;
+
+	padding: 0 1em;
 }
 
-#mySkills div {
-	width: 50%;
+#mySkills > div {
+	width: 40%;
 	text-align: center;
-	padding: 0 2em;
 }
-#mySkills h3 {
+
+.skills-heading {
 	font-size: 1.8rem;
 }
+
 .skills-liks {
 	display: block;
 	background-color: rgb(97, 96, 96);
@@ -202,6 +205,12 @@ main {
 
 .projects-image:hover {
 	opacity: 1;
+}
+
+.sqr {
+	width: 128px;
+	height: 128px;
+	background-color: red;
 }
 
 .model-back {
@@ -245,8 +254,26 @@ main {
 	font-size: 1.4rem;
 }
 
-.model-socia {
-	width: 10%;
+.model-social {
+	position: relative;
+	width: 100%;
+}
+
+.model-socia-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+}
+
+.model-socia-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 1rem;
+	width: 50px;
+	height: 50px;
 }
 
 /*form */
@@ -302,7 +329,7 @@ main {
 
 @media (max-width: 750px) {
 	html {
-		font-size: 8px;
+		font-size: 10px;
 	}
 
 	aside {
@@ -312,13 +339,17 @@ main {
 	main {
 		margin: 0;
 	}
+	.subHeading {
+		font-size: 4rem;
+	}
 
-	#home {
-		height: 75vh;
+	.skills-heading {
+		font-size: 2.5rem;
 	}
 
 	.projectDisplay {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.con {
@@ -327,7 +358,40 @@ main {
 		margin: 0.5em auto;
 	}
 
+	.projects-image {
+		width: 80%;
+		padding: 1em 0;
+	}
+
+	.model {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.model-images {
+		height: 50%;
+	}
+
+	.left {
+		padding: 1em;
+	}
+	.model-heading {
+		padding: 0.5em;
+		margin: 0;
+	}
+
+	.left p {
+		padding: 0.5em;
+	}
+
 	#contact form {
 		display: block;
+	}
+
+	#contact input[placeholder],
+	#contact textarea {
+		width: 100%;
+		padding: 1em 0;
+		margin: 1em 0;
 	}
 }
