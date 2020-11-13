@@ -1,148 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS  -->
-    
-    <link rel="stylesheet" href="./css/stayle.css" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <aside>
-      <img
-        src="./images/profile-min.JPG"
-        alt=""
-        class="profile-picture"
-      />
-      <h2 class="aside-heading" >Leletu Ngalo</h2>
-      <div class="socialMedia">
-        <a 
-        href="./images/CV.pdf" 
-        target="_blank" 
-        class="socialMediaLinks"
-          >
-          <img src="./images/resume.png" class="imageIcon"  alt="resume">
-        </a>
-        <a
-          href="https://github.com/Leletungalo"
-          target="_blank"
-          class="socialMediaLinks">
-          <img src="./images/git-hub.png" class="imageIcon" alt="github"/>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/leletu-ngalo/"
-          target="_blank"
-          class="socialMediaLinks">
-          <img src="./images/linkedin.png" class="imageIcon hoverable" alt="linkedin"/>
-        </a>
-      </div>
-      <ul class="sections">
-        <li class="sections-liks"><a  href="#">Home</a></li>
-        <li class="sections-liks"><a  href="#skills">Skills</a></li>
-        <li class="sections-liks"><a  href="#projects">Projects</a></li>
-        <li class="sections-liks"><a  href="#contact">Contact</a></li>
-      </ul>
-    </aside>
-    <main>
-      <div id="home" class="white-text">
-        <div class="menu">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <h1 class="center-align mainHeading">
-          Hi, I am a front end <br />
-          deverloper
-        </h1>
-        <p class="left-align bio">
-          I am a web developer specializing in high quality web development.I
-          love challenging myself and learning new technology that is why i am
-          currently learning back end languages.
-        </p>
-        <a href="#skills" >My skills</a>
-      </div>
-      <div id="skills">
-        <h2 class="subHeading">My Skills</h2>
-        <div id="mySkills">
-          <div >
-            <h3 class="skills-heading">Primary</h3>
-            <ul>
-              <li class="skills-liks">JavaScript</li>
-              <li class="skills-liks">React.js</li>
-              <li class="skills-liks">HTML</li>
-              <li class="skills-liks">CSS</li>
-              <li class="skills-liks">Node.js</li>
-            </ul>
-          </div>
-          <div >
-            <h3 class="skills-heading">Secondary</h3>
-            <ul>
-              <li class="skills-liks">Node.js</li>
-              <li class="skills-liks">MangoDB</li>
-              <li class="skills-liks">Express</li>
-              <li class="skills-liks">TypeScript</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="projects">
-        <h2 class="subHeading">My Projects</h2>
-        <div class="projectDisplay">
-            <img 
-            project="gallery-app" 
-            class="projects-image" 
-            src="./images/gallery.jpg" 
-            alt="gallery-app" 
-            class="projectImage" />   
-            <img 
-            class="projects-image" 
-            src="./images/expense.jpg" 
-            alt="expense-tracker" 
-            project="expense-tracker"
-            class="projectImage" />
-            <img 
-            class="projects-image" 
-            src="./images/todo.jpg" 
-            project="todo-app"
-            alt="todo-app"
-            class="projectImage" />
-        </div>
-      </div>
-      <div id="contact">
-        <h2 class="subHeading">Contact Me</h2>
-        <form name="Portfolio" method="POST" data-netlify="true" >
-          <input
-            type="text"
-            placeholder="Name"
-            id="name"
-            class="cantactDetails"
-          />
-          <input
-            type="text"
-            placeholder="Surname"
-            id="surname"
-            class="cantactDetails"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            id="email"
-            class="cantactDetails"
-          />
-          <textarea
-            placeholder="Massange"
-            name="message"
-            id="massage"
-            cols="30"
-            rows="5"
-          ></textarea>
-          <div>
-            <input type="submit" value="Submit" class="waves-effect btn" />
-          </div>
-        </form>
-      </div>
-    </main>
-    <script src="./javaScript/index.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/stayle.css" />
+		<title>My Portfolio</title>
+	</head>
+	<body>
+		<aside>
+			<img
+				src="./images/profile-min.JPG"
+				alt=""
+				class="profile-picture"
+			/>
+			<h2 class="aside-heading">Leletu Ngalo</h2>
+			<div class="socialMedia">
+				<a
+					href="./images/CV.pdf"
+					target="_blank"
+					class="socialMediaLinks"
+				>
+					<img
+						src="./images/resume.png"
+						class="imageIcon"
+						alt="resume"
+					/>
+				</a>
+				<a
+					href="https://github.com/Leletungalo"
+					target="_blank"
+					class="socialMediaLinks"
+				>
+					<img
+						src="./images/git-hub.png"
+						class="imageIcon"
+						alt="github"
+					/>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/leletu-ngalo/"
+					target="_blank"
+					class="socialMediaLinks"
+				>
+					<img
+						src="./images/linkedin.png"
+						class="imageIcon hoverable"
+						alt="linkedin"
+					/>
+				</a>
+			</div>
+			<ul class="sections">
+				<li class="sections-liks"><a href="#">Home</a></li>
+				<li class="sections-liks"><a href="#skills">Skills</a></li>
+				<li class="sections-liks"><a href="#projects">Projects</a></li>
+				<li class="sections-liks"><a href="#contact">Contact</a></li>
+			</ul>
+		</aside>
+		<main>
+			<div id="home" class="white-text">
+				<div class="menu">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+				<h1 class="center-align mainHeading">
+					Hi, I am a front end <br />
+					deverloper
+				</h1>
+				<p class="left-align bio">
+					I am a web developer specializing in high quality web
+					development.I love challenging myself and learning new
+					technology that is why i am currently learning back end
+					languages.
+				</p>
+				<a href="#skills">My skills</a>
+			</div>
+			<div id="skills">
+				<h2 class="subHeading">My Skills</h2>
+				<div id="mySkills">
+					<div>
+						<h3 class="skills-heading">Primary</h3>
+						<ul>
+							<li class="skills-liks">JavaScript</li>
+							<li class="skills-liks">React.js</li>
+							<li class="skills-liks">HTML</li>
+							<li class="skills-liks">CSS</li>
+							<li class="skills-liks">Node.js</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="skills-heading">Secondary</h3>
+						<ul>
+							<li class="skills-liks">Node.js</li>
+							<li class="skills-liks">MangoDB</li>
+							<li class="skills-liks">Express</li>
+							<li class="skills-liks">TypeScript</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="projects">
+				<h2 class="subHeading">My Projects</h2>
+				<div class="projectDisplay">
+					<img
+						project="gallery-app"
+						class="projects-image"
+						src="./images/gallery.jpg"
+						alt="gallery-app"
+						class="projectImage"
+					/>
+					<img
+						class="projects-image"
+						src="./images/expense.jpg"
+						alt="expense-tracker"
+						project="expense-tracker"
+						class="projectImage"
+					/>
+					<img
+						class="projects-image"
+						src="./images/landing-idea.jpg"
+						project="lellowebsite"
+						alt="todo-app"
+						class="projectImage"
+					/>
+				</div>
+			</div>
+			<div id="contact">
+				<h2 class="subHeading">Contact Me</h2>
+				<form name="Portfolio" method="POST" data-netlify="true">
+					<input
+						type="text"
+						placeholder="Name"
+						id="name"
+						class="cantactDetails"
+					/>
+					<input
+						type="text"
+						placeholder="Surname"
+						id="surname"
+						class="cantactDetails"
+					/>
+					<input
+						type="email"
+						placeholder="Email"
+						id="email"
+						class="cantactDetails"
+					/>
+					<textarea
+						placeholder="Massange"
+						name="message"
+						id="massage"
+						cols="30"
+						rows="5"
+					></textarea>
+					<div>
+						<input
+							type="submit"
+							value="Submit"
+							class="waves-effect btn"
+						/>
+					</div>
+				</form>
+			</div>
+		</main>
+		<script src="./javaScript/index.js"></script>
+	</body>
 </html>
