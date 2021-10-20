@@ -106,7 +106,7 @@ main {
 #home {
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url("../images/landing-page.jpg");
+		url("../images/images.jfif");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
