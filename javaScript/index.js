@@ -17,15 +17,15 @@ sections.forEach(element => {
 const messages = project => {
 	let paregraph1,
 		paregraph2,
-		paragraph3,
+		paregraph3,
 		heading,
 		link1,
 		link2 = "";
-	if (project === "expense-tracker") {
-		heading = "Expense tracker";
-		paregraph1 = `This is expense tracking app. Use enters the incomes and expenses, and the app calculates total, total expense and income total. Display the information `;
-		paregraph2 = `This is a react app and uses the context A.P.I to manage state for the transactions and the information of the log in user`;
-		paregraph3 = `This app is hosted on Netlify and uses the firebase authentication to log in and log out the user. The transactions are stored on the firebase fire store database `;
+	if (project === "tso-delivery") {
+		heading = "Tso Delivery";
+		paregraph1 = `This is a food delivery app and focus on lauch to factory workers`;
+		paregraph2 = `The app is built with next.js and some pages are sever rendered. The authntication is uses firebase auth and it also support google and facebook login`;
+		paregraph3 = `The data of the app is stored in Firebase firestore and images are on firebase storege. and the app is hosted on vercel  `;
 		link1 = "https://github.com/Leletungalo/expense-tracter.git";
 		link2 = "https://expense-tracker1996.netlify.app/";
 	} else if (project === "lello-website") {

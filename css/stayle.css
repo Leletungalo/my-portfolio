@@ -11,7 +11,9 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
 	margin: 0;
 }
 
@@ -27,10 +29,6 @@ body {
 a {
 	text-decoration: none;
 	color: white;
-}
-
-a:hover {
-	color: var(--primary);
 }
 
 ul {
@@ -106,41 +104,37 @@ main {
 }
 
 #home {
-	position: relative;
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 		url("../images/landing-page.jpg");
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: 100% 100%;
 	padding: 0 5em;
+	position: relative;
 }
 
 #home .mainHeading {
 	text-align: center;
-	color: white;
 	font-size: 3rem;
 	padding: 1.3em 0;
 	font-weight: 800;
 }
 
 #home p {
-	display: inline-block;
 	font-size: 1.5rem;
-	color: white;
 }
 
 #home a {
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -60%);
-	display: inline-block;
+	width: max-content;
+	display: block;
 	font-size: 2rem;
 	padding: 0.5em 1em;
-	margin: 0 auto;
-	color: white;
+	margin: 1em auto;
 	background-color: var(--primary);
-	border-radius: 5%;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 2em;
 }
 
 /*Skills*/
@@ -392,6 +386,7 @@ main {
 		margin: 5px 0;
 	}
 	#home {
+		position: relative;
 		padding: 2em;
 	}
 
@@ -406,7 +401,7 @@ main {
 	}
 
 	.subHeading {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 
 	.skills-heading {
@@ -451,7 +446,6 @@ main {
 	.left p {
 		padding: 0.5em 0;
 	}
-
 	#contact form {
 		display: block;
 	}
@@ -461,5 +455,11 @@ main {
 		width: 100%;
 		padding: 1em 0;
 		margin: 1em 0;
+	}
+}
+
+@media (max-width: 300px) {
+	html {
+		font-size: 9px;
 	}
 }
