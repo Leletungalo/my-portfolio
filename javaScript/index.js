@@ -26,8 +26,8 @@ const messages = project => {
 		paregraph1 = `This is a food delivery app and focus on lauch to factory workers`;
 		paregraph2 = `The app is built with next.js and some pages are sever rendered. The authntication is uses firebase auth and it also support google and facebook login`;
 		paregraph3 = `The data of the app is stored in Firebase firestore and images are on firebase storege. and the app is hosted on vercel  `;
-		link1 = "https://github.com/Leletungalo/expense-tracter.git";
-		link2 = "https://expense-tracker1996.netlify.app/";
+		link1 = "https://github.com/Leletungalo/tso-delivery";
+		link2 = "https://tso-delivery.vercel.app/";
 	} else if (project === "lello-website") {
 		heading = "Lello Brand Architects";
 		paregraph1 = `Lello is brand marketing company based in cape town, this is the website I made for them.`;
